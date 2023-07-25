@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "content": "abc def ghi jkl"
+    },
+    {
+      "id": 2,
+      "title": "title2",
+      "author": "typicode",
+      "content": "lorep ipsum blablabla"
+    },
+    {
+      "title": "titlleeeee",
+      "author": "sadfghnbvc",
+      "content": "sdfgnbvc",
+      "id": 3
+    },
+    {
+      "title": "vvv",
+      "author": "vvv",
+      "content": "vvvv",
+      "id": 4
+    }
+  ]
+}

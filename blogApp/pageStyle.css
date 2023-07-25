@@ -1,0 +1,88 @@
+.modal {
+    display: none;
+}
+
+.button {
+    background-color: rgb(132, 167, 191);
+    border-radius: 20px;
+    border-color: rgb(132, 167, 191);
+    padding: 15px;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+#addButton:hover {
+    background-color: rgb(101, 130, 150);
+    border-color: rgb(101, 130, 150);
+}
+
+.textButton {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: large;
+}
+
+#Xbutton {
+
+    background-color: transparent;
+    border: none;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+#textXButton {
+    text-decoration: none;
+    color:dimgrey;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+#modal {
+    background-color: rgb(180, 198, 212);
+    width: 50%;
+    border-radius: 12px;
+    /*position: fixed;*/
+    display: flex;
+    justify-content: center;
+}
+
+#data {
+    padding: 30px;
+    margin: 10px;
+    transition: top 2s ease 0s;
+}
+
+.labels { 
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+#articles {
+    list-style-type: none;
+}
+
+li { 
+    color:dimgrey;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 20px;
+    padding: 30px;
+    border-color: dimgray;
+    border: solid;
+    border-width: thin;
+    width: 50%;
+    /*transform:  translate(40%, 0);*/
+    justify-content: center;
+    border-radius: 17px;
+    text-decoration: none;
+}
+
+#articleAuthor {
+    font-size: medium;
+    text-decoration: none;
+}

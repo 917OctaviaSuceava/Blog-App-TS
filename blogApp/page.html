@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="pageStyle.css">
+    <script>var exports = {};</script>
+    <title>Blog</title>
+</head>
+<body>
+    <button id="addButton" class="button"><a href="#" id="textAddButton" class="textButton">Add article</a></button><br><br>
+    <div id="modal" class="modal">
+        <button id="Xbutton"><a href="#" id="textXButton">X</a></button>
+        <form id="data">
+            <label for="title" class="labels">Title:</label>
+            <input type="text" id="title" name="title"><br><br>
+
+            <label for="author" class="labels">Author:</label>
+            <input type="text" id="author" name="author"><br><br>
+
+            <label for="content" class="labels">Content:</label>
+            <textarea id="content" name="content"></textarea>
+            <br><br>
+            <button id="submitButton" class="button"><a href="#" id="textSubmitButton" class="textButton">Submit</a></button> 
+        </form>
+        
+    </div>
+    <ul id="articles">
+
+
+    </ul>
+    <script src="/dist/routing/routes.js"></script>
+    <script src="/dist/use cases/getArticles.js"></script>
+    <script src="/dist/use cases/addArticle.js"></script>
+</body>
+
+</html>
