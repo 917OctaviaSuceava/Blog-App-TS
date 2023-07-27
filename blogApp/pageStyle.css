@@ -17,6 +17,9 @@ body {
     }
 }
 
+#addButton {
+    margin-left: 62px;
+}
 
 .overlay {
     position: fixed;
