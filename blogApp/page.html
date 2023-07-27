@@ -29,19 +29,33 @@
         </form>
         
     </div>
+    
     <ul id="articles">
 
 
     </ul>
+    <div id="article">
 
+    </div>
+
+    <div id="overlayArticle" class="overlay"></div>
+    <div id="modalArticle" class="modal">
+        <button id="articleXbutton"><a href="#" id="textArticleXButton">X</a></button>
+    
+    </div>
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("modal");
+            const modalArticle = document.getElementById("modalArticle");
             modal.style.display = "none";
+            modalArticle.style.display = "none";
         });
     </script>
-    <script src="/dist/use cases/getArticles.js" defer type="module"></script>
+    <!-- <script src="/dist/use cases/getArticles.js" defer type="module"></script>
+    <script src="/dist/use cases/getArticle.js" defer type="module"></script> -->
+    <script src="/dist/use cases/getArticlesAndArticle.js" defer type="module"></script>
+    
     <script src="/dist/use cases/addArticle.js" defer type="module"></script>
     
     <script src="/dist/routing/routes.js" defer type="module"></script>

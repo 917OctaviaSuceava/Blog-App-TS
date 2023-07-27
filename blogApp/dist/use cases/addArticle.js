@@ -1,5 +1,7 @@
 const modal = document.getElementById("modal");
+const modalArticle = document.getElementById("modalArticle");
 const overlay = document.getElementById("overlay");
+const overlayArticle = document.getElementById("overlayArticle");
 document.getElementById("addButton").onclick = () => {
     modal.style.display = "block";
     overlay.style.display = "block";
@@ -12,6 +14,8 @@ window.addEventListener("click", function (event) {
     if (event.target === modal) {
         modal.style.display = "none";
         overlay.style.display = "none";
+        modalArticle.style.display = "none";
+        overlayArticle.style.display = "none";
     }
 });
 document.getElementById("submitButton").addEventListener("click", function () {

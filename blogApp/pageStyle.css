@@ -21,6 +21,11 @@ body {
     margin-left: 62px;
 }
 
+#modalArticle
+{
+    background-color: rgb(195, 141, 157);
+    top: 5%;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -79,7 +84,7 @@ body {
     font-size: large;
 }
 
-#Xbutton {
+#Xbutton, #articleXbutton {
 
     background-color: transparent;
     border: none;
@@ -89,13 +94,14 @@ body {
 
 }
 
-#textXButton {
+#textXButton, #textArticleXButton {
     text-decoration: none;
     color:rgb(225, 233, 240);
     font-weight: bold;
     font-size: large;
     
 }
+
 #data {
     padding: 30px;
     margin: 10px;
