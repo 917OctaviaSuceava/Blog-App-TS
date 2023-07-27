@@ -1,17 +1,20 @@
-document.getElementById("addButton").addEventListener("click", function() {
-    const modal = document.getElementById("modal");
-    modal.style.display = "block";
-});
+
+const modal = document.getElementById("modal");
+const overlay = document.getElementById("overlay");
+document.getElementById("addButton").onclick = () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+}
 
 document.getElementById("Xbutton").addEventListener("click", function() {
-    const modal = document.getElementById("modal");
     modal.style.display = "none";
+    overlay.style.display = "none";
 });
 
 window.addEventListener("click", function(event) {
-    const modal = document.getElementById("modal");
     if (event.target === modal) {
         modal.style.display = "none";
+        overlay.style.display = "none";
     }
 });
 

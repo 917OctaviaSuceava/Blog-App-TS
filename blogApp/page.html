@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="pageStyle.css">
+    
     <script>var exports = {};</script>
+    
     <title>Blog</title>
 </head>
 <body>
     <button id="addButton" class="button"><a href="#" id="textAddButton" class="textButton">Add article</a></button><br><br>
+    <div id="overlay" class="overlay"></div>
     <div id="modal" class="modal">
         <button id="Xbutton"><a href="#" id="textXButton">X</a></button>
         <form id="data">
@@ -30,9 +33,22 @@
 
 
     </ul>
-    <script src="/dist/routing/routes.js"></script>
-    <script src="/dist/use cases/getArticles.js"></script>
-    <script src="/dist/use cases/addArticle.js"></script>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none";
+        });
+    </script>
+    <script src="/dist/use cases/getArticles.js" defer type="module"></script>
+    <script src="/dist/use cases/addArticle.js" defer type="module"></script>
+    
+    <script src="/dist/routing/routes.js" defer type="module"></script>
+    
+    
+    
+    
 </body>
 
 </html>
